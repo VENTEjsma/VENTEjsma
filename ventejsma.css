@@ -1,0 +1,192 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar{
+    height: 70px;
+    width: 100%;
+    padding: 14px 30px;
+    background-image: linear-gradient(45deg, green 10%, #3D6F8E 10%, #3D6F8E 20%, #fff 20%, #fff 30%, #826363 30%, #826363 40%, #472d2d 40%, #472d2d 50%, green 50%, green 60%, #3D6F8E 60%, #3D6F8E 70%, #fff 70%, #fff 80%, #826363 80%, #826363 90%, #472d2d 90%, #472d2d 100%);
+    background-size: 141.42px 141.42px;
+    position: relative;
+  }
+  body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(45deg, red 25%, #3D6F8E 25%, #3D6F8E 50%, red 50%, red 75%, #3D6F8E 75%, #3D6F8E 100%);
+    background-size: 56.57px 56.57px;;
+background-size: 100%  ;
+  }
+  .navbar .nav-header{
+    display: inline;
+  }
+  .navbar .nav-header .nav-logo{
+    display: inline-block;
+    margin-top: -7px;
+  }
+  .navbar .nav-links{
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+   
+  .navbar .nav-links .loginBtn{
+    display: inline-block;
+    padding: 5px 15px;
+    margin-left: 20px;
+    font-size: 17px;
+    color: rgb(9, 14, 90);
+  }
+  .navbar .nav-links a{
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: 550;
+    background-image: linear-gradient(45deg, red 25%, #3D6F8E 25%, #3D6F8E 50%, red 50%, red 75%, #3D6F8E 75%, #3D6F8E 100%);
+    background-size: 56.57px 56.57px;
+    color:black;
+  }
+  /* Hover effects */
+  .navbar .nav-links a:hover{
+    background-image: linear-gradient(45deg, green 10%, #3D6F8E 10%, #3D6F8E 20%, #fff 20%, #fff 30%, #826363 30%, #826363 40%, #472d2d 40%, #472d2d 50%, green 50%, green 60%, #3D6F8E 60%, #3D6F8E 70%, #fff 70%, #fff 80%, #826363 80%, #826363 90%, #472d2d 90%, #472d2d 100%);
+    background-size: 141.42px 141.42px;
+  }
+   
+  /* responsive navbar toggle button */
+  .navbar #nav-check, .navbar .nav-btn{
+    display: none;
+  }
+   
+
+
+
+
+  @media (max-width:950px) {
+    .navbar .nav-btn{
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    .navbar .nav-btn label {
+      display: inline-block;
+      width: 80px;
+      height: 70px;
+      padding: 25px;
+    }
+    .navbar .nav-btn label span {
+      display: block;
+      height: 10px;
+      width: 25px;
+      border-top: 3px solid #eee;
+    }
+    .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+background: rgb(0,139,139);
+background: radial-gradient(circle, rgba(0,139,139,1) 50%, rgba(0,100,0,1) 50%, rgba(0,139,139,1) 100%);
+    }
+    .navbar .nav-links{
+      position: absolute;
+      display: block;
+      text-align: center;
+border-top-right-radius: 30px;
+border:  transparent 10px double;
+Color :transparent;
+background-clip: content-box;
+
+
+      width: 100%;
+     background-image: url(logo2.Png);background-color: rgb(190, 21, 21);
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 80px;
+      right: 0px;
+    }
+    .navbar .nav-links a {
+      display: block;
+    }
+   
+    /* when nav toggle button not checked */
+    .navbar #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+   
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 70px);
+      overflow-y: auto;
+    }
+    .navbar .nav-links .loginBtn {
+      padding: 10px 40px ;
+      margin: 20px;
+      font-size:  18px;
+      font-weight: bold;
+      color: rgb(9, 14, 90);
+    }
+     
+   
+  }
+
+body{ background-image: linear-gradient(45deg, red 25%, #3D6F8E 25%, #3D6F8E 50%, red 50%, red 75%, #3D6F8E 75%, #3D6F8E 100%);
+    background-size: 56.57px 56.57px;}
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-gap: 20px;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-rows: max-content 200px 1fr;
+    }
+    
+    .card img {
+        object-fit: cover;
+        border-radius: 5%;
+    }
+    #p1{background-image: linear-gradient(45deg, white 25%, #c2c2c2 25%, #c2c2c2 50%, white 50%, white 75%, #c2c2c2 75%, #c2c2c2 100%);
+        background-size: 56.57px 56.57px;
+        backface-visibility: visible;
+        border-radius: 5%;
+        color:black;
+     text-align: left;
+    }
+    a{
+        text-decoration: none;
+    }
+    #li2{
+        text-align: center;
+        color: black;
+    }
+    #li3{
+        text-align: center;
+        color: black;
+    }
+    #li4{
+        text-align: center;
+        color: black;
+    }
+#li1{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    }
+    #l1{
+        text-align: center;
+   text-decoration: none;
+   border-bottom: #ff0000;
+   border-style: solid;
+   border-color:#ff0000;
+   background-color: #ff0000;
+ border-radius: 5%;
+   border-width: 5px;
+    }
+    img{
+        border-radius: 40px;
+        transition: transform .9s;
+    }
+   img:hover{
+        -ms-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+ 
